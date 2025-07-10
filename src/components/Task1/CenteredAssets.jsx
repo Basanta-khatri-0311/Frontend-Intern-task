@@ -13,92 +13,100 @@ import video from "../../assets/Task1/video.png";
 const CenteredAssets = () => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const images = [
-    {
-      src: likegif,
-      alt: "like",
-      defaultPos: "top-[30%] left-[45%]",
-      hoverPos: "top-[20%] left-[45%]",
-      bounce: false,
-    },
-    {
-      src: person3,
-      alt: "person3",
-      defaultPos: "top-[30%] left-[55%]",
-      hoverPos: "top-[10%] left-[65%]",
-      bounce: true,
-    },
-    {
-      src: person4,
-      alt: "person4",
-      defaultPos: "bottom-[50%] right-[30%]",
-      hoverPos: "bottom-[50%] right-[15%]",
-      bounce: true,
-    },
-    {
-      src: likesgif,
-      alt: "likes",
-      defaultPos: "bottom-[35%] right-[32%]",
-      hoverPos: "bottom-[35%] right-[20%]",
-      bounce: false,
-    },
-    {
-      src: video,
-      alt: "video",
-      defaultPos: "bottom-[30%] left-[55%]",
-      hoverPos: "bottom-[15%] left-[65%]",
-      bounce: true,
-    },
-    {
-      src: trophygif,
-      alt: "trophy",
-      defaultPos: "bottom-[30%] left-[45%]",
-      hoverPos: "bottom-[15%] left-[45%]",
-      bounce: false,
-    },
-    {
-      src: person1,
-      alt: "person1",
-      defaultPos: "bottom-[30%] left-[37%]",
-      hoverPos: "bottom-[15%] left-[25%]",
-      bounce: true,
-    },
-    {
-      src: happy,
-      alt: "happy",
-      defaultPos: "bottom-[35%] left-[30%]",
-      hoverPos: "bottom-[45%] left-[20%]",
-      bounce: false,
-    },
-    {
-      src: testimonial,
-      alt: "testimonial",
-      defaultPos: "top-[29%] left-[33%]",
-      hoverPos: "top-[10%] left-[30%]",
-      bounce: true,
-    },
-    {
-      src: person2,
-      alt: "person2",
-      defaultPos: "top-[45%] left-[28%]",
-      hoverPos: "top-[25%] left-[15%]",
-      bounce: true,
-    },
-  ];
-
   return (
     <>
-      <div className="absolute inset-0 pointer-events-none z-0">
-        {images.map(({ src, alt, defaultPos, hoverPos, bounce }, index) => (
-          <img
-            key={index}
-            src={src}
-            alt={alt}
-            className={`absolute w-20 transition-all duration-500 ${
-              isHovered ? hoverPos : defaultPos
-            } ${isHovered && bounce ? "animate-bounce" : ""}`}
-          />
-        ))}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={likegif}
+          alt="like"
+          className={`absolute w-20 transition-all duration-500 ${
+            isHovered ? "top-[20%] left-[45%]" : "top-[30%] left-[45%]"
+          }`}
+        />
+
+        <img
+          src={person3}
+          alt="person3"
+          className={`absolute w-20 transition-all duration-500 ${
+            isHovered
+              ? "top-[10%] left-[65%] animate-bounce"
+              : "top-[30%] left-[55%]"
+          }`}
+        />
+
+        <img
+          src={person4}
+          alt="person4"
+          className={`absolute w-20 transition-all duration-500 ${
+            isHovered
+              ? "bottom-[50%] right-[15%] animate-bounce"
+              : "bottom-[50%] right-[30%]"
+          }`}
+        />
+
+        <img
+          src={likesgif}
+          alt="likes"
+          className={`absolute w-20 transition-all duration-500 ${
+            isHovered ? "bottom-[35%] right-[20%]" : "bottom-[35%] right-[32%]"
+          }`}
+        />
+
+        <img
+          src={video}
+          alt="video"
+          className={`absolute w-20 transition-all duration-500 ${
+            isHovered
+              ? "bottom-[15%] left-[65%] animate-bounce"
+              : "bottom-[30%] left-[55%]"
+          }`}
+        />
+
+        <img
+          src={trophygif}
+          alt="trophy"
+          className={`absolute w-20 transition-all duration-500 ${
+            isHovered ? "bottom-[15%] left-[45%]" : "bottom-[30%] left-[45%]"
+          }`}
+        />
+
+        <img
+          src={person1}
+          alt="person1"
+          className={`absolute w-20 transition-all duration-500 ${
+            isHovered
+              ? "bottom-[15%] left-[25%] animate-bounce"
+              : "bottom-[30%] left-[37%]"
+          }`}
+        />
+
+        <img
+          src={happy}
+          alt="happy"
+          className={`absolute w-20 transition-all duration-500 ${
+            isHovered ? "bottom-[45%] left-[20%]" : "bottom-[35%] left-[30%]"
+          }`}
+        />
+
+        <img
+          src={testimonial}
+          alt="testimonial"
+          className={`absolute w-20 transition-all duration-500 hover:border-2 border-sky-600 ${
+            isHovered
+              ? "top-[10%] left-[30%] animate-bounce"
+              : "top-[29%] left-[33%]"
+          }`}
+        />
+
+        <img
+          src={person2}
+          alt="person2"
+          className={`absolute w-20 transition-all duration-500 ${
+            isHovered
+              ? "top-[25%] left-[15%] animate-bounce"
+              : "top-[45%] left-[28%]"
+          }`}
+        />
       </div>
 
       <div
