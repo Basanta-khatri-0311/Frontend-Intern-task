@@ -3,9 +3,9 @@ import React from "react";
 const VideoTestimonial = ({ video, playVideo, isHovered }) => {
   return (
     <div
-      className={`absolute w-20 h-20 transition-all duration-500 ${
+      className={`absolute w-20 h-20 transition-all duration-500  rounded-3xl  hover:shadow-[0_0_5px_5px_rgba(112,245,194,0.6)] hover:scale-105 ${
         isHovered
-          ? "bottom-[5%] left-[65%] animate-bounce"
+          ? "bottom-[5%] left-[65%] bounce-down"
           : "bottom-[25%] left-[55%]"
       }`}
     >
@@ -13,7 +13,7 @@ const VideoTestimonial = ({ video, playVideo, isHovered }) => {
       <img
         src={video}
         alt="video"
-        className="w-full h-full object-cover peer cursor-pointer"
+        className="w-full h-full object-cover peer cursor-pointer "
       />
 
       {/* VIDEO: positioned relative to image, shown on image hover */}

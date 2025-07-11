@@ -1,13 +1,12 @@
 import React from "react";
 
-const TestimonialImage = ({isHovered , testimonial}) => {
+const TestimonialImage = ({ isHovered, testimonial }) => {
   return (
     <div
-      className={`absolute w-20 h-20 transition-all duration-500  ${
-        isHovered
-          ? "top-[5%] left-[25%] animate-bounce"
-          : "top-[25%] left-[33%]"
-      }`}
+      className={`absolute w-20 h-20 transition-all duration-500 rounded-3xl
+        hover:shadow-[0_0_5px_5px_rgba(112,245,194,0.6)] hover:scale-105 ${
+      isHovered ? "top-[5%] left-[25%] bounce-up" : "top-[25%] left-[33%]"
+     }`}
     >
       {/* Image with peer */}
       <img
