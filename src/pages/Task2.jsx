@@ -9,7 +9,7 @@ const Task2 = () => {
   return (
     <section className="w-7xl h-[90%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-12">
       <Heading/>
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 gap-12">
         {/* Card 1 */}
         <Card1 />
 
