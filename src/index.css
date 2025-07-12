@@ -55,3 +55,35 @@
 }
 
 
+
+
+
+.card-with-curves {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+ 
+}
+
+.card-with-curves::before,
+.card-with-curves::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  background-color: white; 
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.card-with-curves::before {
+  left: -30px; 
+}
+
+.card-with-curves::after {
+  right: -30px;
+}
+
+

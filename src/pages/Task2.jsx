@@ -1,9 +1,9 @@
 import React from "react";
 import Heading from "../components/Task2/Heading";
-import Card1 from "../components/Task2/Card1";
-import Card2 from "../components/Task2/Card2";
 import Card3 from "../components/Task2/Card3";
 import Card4 from "../components/Task2/Card4";
+import FinalCard1 from "../components/Task2/FinalCard1";
+import FinalCard2 from "../components/Task2/FinalCard2";
 
 const Task2 = () => {
   return (
@@ -11,10 +11,10 @@ const Task2 = () => {
       <Heading/>
       <div className="grid grid-cols-2 gap-12">
         {/* Card 1 */}
-        <Card1 />
+        <FinalCard1 />
 
         {/* Card 2 */}
-        <Card2 />
+        <FinalCard2 />
 
         {/* Card 3 */}
         <Card3 />
