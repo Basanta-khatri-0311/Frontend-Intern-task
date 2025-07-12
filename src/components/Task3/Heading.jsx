@@ -7,7 +7,7 @@ const Heading = () => {
         Explore our classes and master trending skills!
       </p>
       <h2 className="text-4xl font-bold">
-        Dive Into <span className="text-red-600">What's Hot Right Now!</span> 🔥
+        Dive Into <span className="text-[#37a077]">What's Hot Right Now!</span> 🔥
       </h2>
     </div>
   );
