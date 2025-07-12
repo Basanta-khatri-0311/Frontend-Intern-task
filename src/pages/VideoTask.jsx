@@ -7,7 +7,7 @@ const SQUARES_PER_CLICK = 10;
 const SQUARE_COLOR = "#6b21a8";
 
 function VideoTask() {
-  // Store colored cells as a set of 'row-col' keys to avoid duplicates
+  // colored cells as a set of 'row-col' keys to avoid duplicates
   const [coloredCells, setColoredCells] = useState(new Set());
 
  const handleClick = () => {
@@ -25,7 +25,7 @@ function VideoTask() {
 };
 
 
-  // Create grid cells
+  //  grid cells
   const cells = [];
   for (let row = 0; row < GRID_ROWS; row++) {
     for (let col = 0; col < GRID_COLS; col++) {
